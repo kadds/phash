@@ -1,0 +1,21 @@
+[package]
+name = "phash"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+naive-cityhash = "0.2.0"
+memmap2 = "0.5.3"
+rand = "0.8"
+bitvec = "1.0.0"
+log="0.4"
+strength_reduce = "0.2.3"
+
+[dev-dependencies]
+criterion = "0.3"
+
+[[bench]]
+name = "bench"
+harness = false
